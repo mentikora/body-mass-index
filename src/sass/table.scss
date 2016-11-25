@@ -2,9 +2,11 @@
   width: 100%;
   border-spacing: 0;
   table-layout: fixed;
-  border-collapse: collapse;
 
   background: #fff;
+
+  border: 1px solid $lines_c;
+  border-radius: $border_radius_default;
   
   th,
   td{
@@ -18,14 +20,21 @@
 
   th{
     padding: 15px 10px;
-    border-top: 1px solid $lines_c;
     border-bottom: 1px solid $lines_c;
   }
   td{
     padding: 8px 10px;
+
+    @include transition(background .25s ease-in-out);
   }
-  .highlight td{
-    padding: 15px 10px;
-    background: lighten($lines_c, 15%);
+  tr{
+    &:hover td{
+      background: lighten($lines_c, 15%);
+    }  
+    &.highlight td{
+      padding: 15px 10px;
+      background: lighten($lines_c, 10%);
+    }
   }
+  
 }

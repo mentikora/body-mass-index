@@ -8,7 +8,7 @@
   font-size: $normal_fz;
 
   cursor: pointer;
-  border-radius: $border_default;
+  border-radius: $border_radius_default;
   border: 1px solid $link_c;
 
   @include transition(all .25s ease-in-out);

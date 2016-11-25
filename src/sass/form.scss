@@ -5,14 +5,19 @@
   background: #fff;
   font-size: $small_fz;
 
-  border-top: 1px solid $lines_c;
-  border-bottom: 1px solid $lines_c;
+  border: 1px solid $lines_c;
+
+  border-radius: $border_radius_default;
 
   @extend .clearfix;
 
   label{
     float: left;
     width: 40%;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
   }
   input{
     float: left;
@@ -20,7 +25,6 @@
     outline: 0;
     width: 60%;
 
-    color: $settings_c;
     text-align: right;
   }
 }
