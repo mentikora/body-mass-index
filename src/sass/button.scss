@@ -1,0 +1,24 @@
+.btn{
+  width: 50%;
+  margin: 0 auto 25px;
+  padding: 10px 15px;
+
+  color: $link_c;
+  text-align: center;
+  font-size: $normal_fz;
+
+  cursor: pointer;
+  border-radius: $border_default;
+  border: 1px solid $link_c;
+
+  @include transition(all .25s ease-in-out);
+
+  &:hover{
+    background: $link_c;
+    color: #fff;
+  }
+
+  &:active{
+    background: darken($link_c, 10%);
+  }
+}
