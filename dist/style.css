@@ -542,7 +542,7 @@ main#wrapper {
   main#wrapper .content_wrapper {
     width: 50%;
     padding: 8px;
-    background: #efeff4; }
+    background: rgba(239, 239, 244, 0.9); }
     @media (max-width: 991px) {
       main#wrapper .content_wrapper {
         margin: 15px 0;

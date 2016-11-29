@@ -56,7 +56,7 @@ main#wrapper{
   .content_wrapper{
     width: 50%;
     padding: 8px;
-    background: $background_c;
+    background: rgba($background_c, .9);
 
     @media(max-width: $grid_tablet){
       margin: 15px 0;
