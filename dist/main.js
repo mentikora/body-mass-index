@@ -6,7 +6,7 @@ window.onload = function(){
   button.onclick = function(){
 
     var userHeight = document.getElementById('user_height').value;
-    if( (userHeight < 1) || (userHeight > 250) ){
+    if( (userHeight < 30) || (userHeight > 250) ){
       throw new Error('Height is not valid');
     }
 
