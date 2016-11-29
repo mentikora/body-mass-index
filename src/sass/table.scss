@@ -36,5 +36,10 @@
       background: lighten($lines_c, 10%);
     }
   }
+
+  tbody tr:last-child td{
+    border-bottom-left-radius: $border_radius_default;
+    border-bottom-right-radius: $border_radius_default;
+  }
   
 }

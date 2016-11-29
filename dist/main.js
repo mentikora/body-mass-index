@@ -24,27 +24,27 @@ window.onload = function(){
     var x;
     switch (true){
       case (bmiResultv2 < 18.5): 
-        alert('Insufficient weight');
+        // alert('Insufficient weight');
         x = 0;
         break;
       case ( (bmiResultv2 > 18.5) && (bmiResultv2 < 24.9) ):
-        alert('Normal');
+        // alert('Normal');
         x = 1;
         break;
       case ( (bmiResultv2 > 25.0) && (bmiResultv2 < 29.9) ):
-        alert('Before obesity');
+        // alert('Before obesity');
         x = 2;
         break;
       case ( (bmiResultv2 > 30.0) && (bmiResultv2 < 34.9) ):
-        alert('Obesity level I');
+        // alert('Obesity level I');
         x = 3;
         break;
       case ( (bmiResultv2 > 35.0) && (bmiResultv2 < 39.9) ):
-        alert('Obesity level II');
+        // alert('Obesity level II');
         x = 4;
         break;
       case ( bmiResultv2 > 40):
-        alert('Obesity level III');
+        // alert('Obesity level III');
         x = 5;
         break;
     }
