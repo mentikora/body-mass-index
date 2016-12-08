@@ -19,7 +19,6 @@
 *{ box-sizing: border-box; }
 .center{ text-align: center; }
 
-
 html,
 body{
   width: 100%;
@@ -62,6 +61,14 @@ main#wrapper{
       margin: 15px 0;
       width: 90%;
     }
+  }
+}
+
+.hidden_block{
+  display: none;
+
+  &.visible{
+    display: block;
   }
 }
 
