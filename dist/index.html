@@ -18,56 +18,69 @@
         <h1 class="center">
           BMI calculator
         </h1>
+
+        <p class="center">
+          Body mass index, or BMI, is used to determine whether you are in a healthy weight range for your height.
+          <br>
+          It is useful consider BMI alongside waist circumference, as increases or decreases in weight outside the healthy range may increase your health risks.
+          <br>
+          <br>
+          Type your data in fields below 
+          <br>
+          (height range: 130cm-250cm, width range: 30kg - 300kg)
+        </p>
         
         <div class="form_controller">
-          <label for="user_height">Your height (sm)</label>
-          <input id="user_height" type="number" min="1" max="250">
+          <label for="user_height">Your height (cm)</label>
+          <input id="user_height" type="number" min="130" max="250">
         </div>
         <div class="form_controller">
           <label for="user_width">Your width (kg)</label>
-          <input id="user_width" type="number" min="1" max="300">
+          <input id="user_width" type="number" min="30" max="300">
         </div>        
         <div class="btn" id="check_btn">Check</div>
         
-        <div class="center user_bmi_result_wrapper">
-          Your BMI:
-          <span class="user_bmi_result"></span>
+        <div class="hidden_block">
+          <div class="center user_bmi_result_wrapper">
+            Your BMI:
+            <span class="user_bmi_result"></span>
+          </div>
+          
+          <table class="table">
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Classification</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              <tr>
+                <td> < 18.5</td>
+                <td>Insufficient weight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Normal</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Before obesity</td>
+              </tr>
+              <tr>
+                <td>30.0 34.9</td>
+                <td>Obesity level I</td>
+              </tr>
+              <tr>
+                <td>35.0 - 39.9</td>
+                <td>Obesity level II</td>
+              </tr>
+              <tr>
+                <td> > 40.0</td>
+                <td>Obesity level III</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
-        <table class="table">
-          <thead>
-            <tr>
-              <th>BMI</th>
-              <th>Classification</th>
-            </tr>
-          </thead>
-          <tbody id="table_body">
-            <tr>
-              <td> < 18.5</td>
-              <td>Insufficient weight</td>
-            </tr>
-            <tr>
-              <td>18.5 - 24.9</td>
-              <td>Normal</td>
-            </tr>
-            <tr>
-              <td>25.0 - 29.9</td>
-              <td>Before obesity</td>
-            </tr>
-            <tr>
-              <td>30.0 34.9</td>
-              <td>Obesity level I</td>
-            </tr>
-            <tr>
-              <td>35.0 - 39.9</td>
-              <td>Obesity level II</td>
-            </tr>
-            <tr>
-              <td> > 40.0</td>
-              <td>Obesity level III</td>
-            </tr>
-          </tbody>
-        </table>
 
       </div>
     </div>
