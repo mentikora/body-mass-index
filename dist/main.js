@@ -1,6 +1,6 @@
 'use strict';
 
-window.onload = function(){
+document.addEventListener('DOMContentLoaded', function(){
 
   var button = document.getElementById('check_btn');
   button.onclick = function(){
@@ -12,9 +12,9 @@ window.onload = function(){
     }
 
     // check user width
-    var userWidth = document.getElementById('user_width').value;  
-    if( (userWidth < 30) || (userWidth > 300) ){
-      throw new Error('Width is not valid');
+    var userWeigth = document.getElementById('user_weigth').value;  
+    if( (userWeigth < 30) || (userWeigth > 300) ){
+      throw new Error('Weith is not valid');
     }
 
     // show table with result
@@ -25,7 +25,7 @@ window.onload = function(){
     }
     
     // calculate formula     
-    var bmiResult = userWidth / Math.pow(userHeight / 100, 2);
+    var bmiResult = userWeigth / Math.pow(userHeight / 100, 2);
     var resultText = document.getElementsByClassName('user_bmi_result')[0];
 
     // put result in field
@@ -64,6 +64,6 @@ window.onload = function(){
 
     tr[x].className += 'highlight';
 
-  }
+  };
 
-};
+});
