@@ -27,16 +27,16 @@
           <br>
           Type your data in fields below 
           <br>
-          (height range: 130cm-250cm, width range: 30kg - 300kg)
+          (height range: 130cm-250cm, weight range: 30kg - 300kg)
         </p>
         
         <div class="form_controller">
           <label for="user_height">Your height (cm)</label>
-          <input id="user_height" type="number" min="130" max="250">
+          <input id="user_height" type="number" min="130" max="250" value="130">
         </div>
         <div class="form_controller">
-          <label for="user_weigth">Your weigth (kg)</label>
-          <input id="user_weigth" type="number" min="30" max="300">
+          <label for="user_weight">Your weigth (kg)</label>
+          <input id="user_weight" type="number" min="30" max="300" value="30">
         </div>        
         <div class="btn" id="check_btn">Check</div>
         
@@ -46,7 +46,7 @@
             <span class="user_bmi_result"></span>
           </div>
           
-          <table class="table">
+          <table class="table bmi_result_table">
             <thead>
               <tr>
                 <th>BMI</th>
@@ -80,6 +80,9 @@
               </tr>
             </tbody>
           </table>
+          
+          <ul class="history"></ul>
+
         </div>
 
       </div>

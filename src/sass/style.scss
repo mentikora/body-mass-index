@@ -79,3 +79,16 @@ main#wrapper{
     color: $link_c;
   }
 }
+
+.history{
+  background: #fff;
+  border: 1px solid $lines_c;
+  border-radius: $border_radius_default;
+  padding: 8px 10px;
+
+  font-weight: 400;
+  text-align: left;
+  font-size: $small_fz;
+  line-height: 21px;
+  list-style-type: none;
+}
